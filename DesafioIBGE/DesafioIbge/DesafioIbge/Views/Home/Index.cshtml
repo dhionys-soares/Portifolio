@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Desafio Ibge";
+}
+<div id="container_principal" class="container justify-content-center">
+
+    <div id="tituloApresentacao" class="d-flex flex-column text-center mt-5 mb-5 align-items-center justify-content-center w-100">
+        
+        <h2 id="titulo" class="justify-content-center">Bem Vindo ao Desafio IBGE</h2>
+
+        <p id="apresentacao" class="justify-content-center fst-normal fs-4 mt-5">Este é um projeto Web ASP.NET baseado no desafio IBGE da plataforma de ensino<a href="http://balta.io"> balta.io</a></p>
+    </div>
+
+    <div id="texto" class="d-flex flex-column text-center align-items-center justify-content-center bg-info bg-opacity-25 w-100 mb-5">
+
+        <p class="fw-bold fs-5 mt-2 justify-content-center">
+            Construção:
+        </p>
+
+        <ul class="list-group border-0 fst-italic">
+            <li class="list-group-item border-0 bg-transparent">HTML e Linguagem de programação C#</li>
+            <li class="list-group-item border-0 bg-transparent">Framework .NET</li>
+            <li class="list-group-item border-0 bg-transparent">Estilização e Design com Bootstrap</li>
+            <li class="list-group-item border-0 bg-transparent">Arquitetura MVC</li>
+            <li class="list-group-item border-0 bg-transparent">ORM Entity Framework</li>
+            <li class="list-group-item border-0 bg-transparent">Banco de dados SQLServer</li>
+        </ul>
+
+        <p class="fw-bold fs-5 mt-2 justify-content-center">
+        Funcionalidades:
+        </p>
+
+        <ul class="list-group border-0 fst-italic">
+            <li class="list-group-item border-0 bg-transparent">CRUD(Create, Read, Update e Delete) dos dados IBGE
+            <li class="list-group-item border-0 bg-transparent">Autenticação e Autorização com Identity</li>
+        </ul>
+    </div>
+
+    <div id="carrosel" class="carousel slide text-center" data-bs-ride="carousel">
+
+        <div id="carrosel_insercao" class="container carousel-inner">
+
+            <div id="carrosel_item" class="carousel-item active text-center">
+                <a asp-controller="Ibge" asp-action="SearchCity">
+                    <img src="~/2.1.png" />
+                </a>
+                <div class="carousel-caption text-dark bg-info bg-opacity-10 rounded rounded-pill p-2">
+                    <h5>Busca Por Cidade</h5>
+                    <p>Experimente! Faça sua busca através do nome da cidade.</p>
+                </div>
+            </div>
+
+            <div id="carrosel_item" class="carousel-item text-center">
+                <a asp-controller="Ibge" asp-action="SearchState">
+                    <img src="~/1.1.png" />
+                </a>
+
+                <div class="carousel-caption text-dark bg-info bg-opacity-10 rounded rounded-pill p-2">
+                    <h5>Busca Por Estado</h5>
+                    <p>Experimente! Faça sua busca através da sigla do estado e receba uma lista de cidades deste estado.</p>
+                </div>
+            </div>
+
+            <div id="carrosel_item" class="carousel-item text-center">
+                <a asp-controller="Ibge" asp-action="SearchId">
+                    <img src="~/3.4.png" />
+                </a>
+                <div class="carousel-caption text-dark bg-info bg-opacity-10 rounded rounded-pill p-2">
+                    <h5>Busca Por Código</h5>
+                    <p>Experimente! Faça sua busca através do código da cidade.</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="botao_voltar" class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carrosel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previus</span>
+        </button>
+
+        <button id="botao_avancar" class="carousel-control-next carousel-dark" type="button" data-bs-target="#carrosel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿@model Ibge
+
+<h1 class="text-center mb-4 pt-5">Atualização de dados</h1>
+<hr />
+
+<form class="container mt-4 pt-4" asp-controller="Ibge" asp-action="Update" method="post">
+
+    <div id="state" class="row justify-content-center text-center border-0">
+
+        <label asp-for="State" class="col-auto fw-bold">Estado</label>
+        <input asp-for="@Model.State" class="col-8 rounded rounded-pill text-center" />
+        <span asp-validation-for="State" class="form-check row text-danger"></span>
+    </div>
+
+    <div id="city" class="row justify-content-center text-center border-0">
+
+        <label asp-for="City" class="col-auto fw-bold">Cidade</label>
+        <input asp-for="@Model.City" class="col-8 rounded rounded-pill text-center" />
+        <span asp-validation-for="City" class="form-check row text-danger"></span>
+    </div>
+
+    <div id="botoes" class="row d-flex justify-content-center">
+
+        <button type="submit" class="btn btn-success col-2 m-2 rounded rounded-pill">Salvar</button>
+
+        <button class="btn btn-secondary col-2 m-2 rounded rounded-pill" asp-controller="Home" asp-action="Index">Cancelar</button>
+    </div>
+    <hr />
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

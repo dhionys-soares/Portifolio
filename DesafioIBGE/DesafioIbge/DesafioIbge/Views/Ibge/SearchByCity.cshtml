@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<Ibge>
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<h2 class="text-center fw-bold pt-5 pb-4">Lista de cidades com a busca "@ViewData["SearchedWord"]"</h2>
+<hr />
+<table class="table table-hover bg-warning bg-opacity-10">
+    <thead class="text-center">
+        <tr>
+            <th>
+                @Html.DisplayName("Estados")
+            </th>
+            <th>
+                @Html.DisplayName("Cidades")
+            </th>
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+            {
+                <th>
+                    @Html.DisplayName("Funções")
+                </th>
+            }
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var item in Model)
+        {
+            <tr class="text-muted shadow">
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+
+                @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                {
+                    <td class="text-center">
+                        <a asp-controller="Ibge" asp-action="Update" asp-route-id="@item.Id" class="link-secondary ps-2">Editar</a>
+                        <a asp-controller="Ibge" asp-action="ReadById" asp-route-id="@item.Id" class="link-primary ps-2">Ver Detalhes</a>
+                        <a asp-controller="Ibge" asp-action="Delete" asp-route-id="@item.Id" class="link-danger ps-2">Deletar</a>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

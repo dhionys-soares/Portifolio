@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model List<Ibge>
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<h2 class="text-center fw-bold pt-5 pb-4">Lista de cidades do estado "@ViewData["SearchedWord"]"</h2>
+<table class="table table-hover bg-warning bg-opacity-10">
+    <thead class="text-center">
+        <tr>
+            <th>
+                @Html.DisplayName("Cidades")
+            </th>
+
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+            {
+                <th>
+                    @Html.DisplayName("Funções")
+                </th>
+            }
+        </tr>
+    </thead>
+    <tbody class="text-center">
+        @foreach (var item in Model)
+        {
+            <tr class="text-muted shadow">
+                <td class="justify-content-start ms-5">
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+
+                @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                {
+                    <td class="text-center">
+                        <a asp-action="Update" asp-route-id="@item.Id" class="link-secondary ps-2">Editar</a>
+                        <a asp-action="ReadById" asp-route-id="@item.Id" class="link-primary ps-2">Ver Detalhes</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="link-danger ps-2">Deletar</a>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+<div id="paginacao" class="pagination-sm active justify-content-sm-between text-center">
+@for (int p = 1; p <= (int)ViewData["TotalPages"]; p++)
+{
+    <a class="page-item" href="/Ibge/SearchByState/@ViewData["SearchedWord"]/@p"> @p </a>
+}
+</div>

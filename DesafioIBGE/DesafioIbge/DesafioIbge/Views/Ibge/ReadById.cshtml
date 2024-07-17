@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model Ibge
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<h2 class="text-center fw-bold pt-5 pb-4">Dados do Código: @Model.Id</h2>
+<hr />
+
+<div class="p-4">
+
+    <dl class="row text-center">
+        <dt class="col-auto">
+            @Html.DisplayName("Estado")
+        </dt>
+        <dd class="col-auto text-muted">
+            @Html.DisplayFor(model => model.State)
+        </dd>
+    </dl>
+
+    <dl class="row text-center">
+        <dt class="col-auto">
+            @Html.DisplayName("Cidade")
+        </dt>
+        <dd class="col-auto text-muted">
+            @Html.DisplayFor(model => model.City)
+        </dd>
+    </dl>
+</div>
+
+@if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+{
+    <div id="botoes" class="text-center pt-2">
+
+        <a asp-controller="Ibge" asp-action="SearchState" class="btn btn-secondary rounded rounded-pill">Voltar</a>
+
+        <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-warning rounded rounded-pill">Editar</a>
+
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger rounded rounded-pill">Deletar</a>
+    </div>
+    <hr />
+}

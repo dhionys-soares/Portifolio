@@ -1,0 +1,23 @@
+﻿@using DesafioIbge.Views.ViewModel
+@model UsuarioViewModel
+
+<form class="container form-control-lg mt-5" asp-controller="Account" asp-action="RemoveRole" method="post">
+
+    <div class="row form-control-lg text-center">
+        <h2 class="mb-4">Remover perfil</h2>
+    </div>
+
+    <div class="row form-control-lg text-center">
+        <label class="col-lg-2" asp-for="Email"></label>
+        <input class="col-lg-10" type="email" asp-for="Email" />
+    </div>
+
+    <div class="row form-control-lg text-center">
+        <label class="col-lg-2" asp-for="Role"></label>
+        <input class="col-lg-10" type="text" asp-for="Role" />
+    </div>
+
+    <div class="row form-control-lg text-center">
+        <button class="col-lg-2 btn btn-danger mx-auto" type="submit">Remover</button>
+    </div>
+</form>

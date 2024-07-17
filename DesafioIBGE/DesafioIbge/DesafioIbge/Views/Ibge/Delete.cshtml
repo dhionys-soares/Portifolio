@@ -1,0 +1,36 @@
+﻿@model Ibge
+
+<form asp-action="Delete" method="post" class="container m-4">
+    <input type="hidden" asp-for="Id" />
+
+    <h2 class="text-center fw-bold pt-5 pb-4">Tem certeza que deseja deletar @Model.City, @Model.State?</h2>
+    <hr />
+
+    <div class="p-4">
+        <dl id="estado" class="row text-center">
+            <dt class="col-auto">
+                @Html.DisplayName("Estado")
+            </dt>
+            <dd class="col-auto text-muted">
+                @Html.DisplayFor(model => model.State)
+            </dd>
+        </dl>
+
+        <dl id="cidade" class="row text-center">
+            <dt class="col-auto">
+                @Html.DisplayName("Cidade")
+            </dt>
+            <dd class="col-auto text-muted">
+                @Html.DisplayFor(model => model.City)
+            </dd>
+        </dl>
+    </div>
+
+    <div id="botoes" class="text-center pt-2">
+
+        <button type="submit" class="btn btn-danger rounded rounded-pill">   Sim, tenho certeza</button>
+
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary rounded rounded-pill">Cancelar</a>
+    </div>
+    <hr />
+    </form>

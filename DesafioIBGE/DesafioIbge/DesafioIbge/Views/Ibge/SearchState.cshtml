@@ -1,0 +1,17 @@
+﻿@model Ibge
+
+<form id="container" class="container" asp-controller="Ibge" asp-action="GetAllOfState" method="post">
+
+    <div id="titulo" class="row text-center pt-4">
+        <h2 class="p-4 text-primary fw-bolder">Buscar Dados</h2>
+    </div>
+
+    <div id="pesquisa" class="row d-flex justify-content-center">
+
+        <input id="input" class="col-md-8 m-2 rounded rounded-pill text-center" asp-for="State" type="text" placeholder="Digite a sigla do estado" />
+
+        <button id="botao" type="submit" class="col-md-2 m-2 btn btn-success rounded rounded-pill">Buscar</button>
+
+    </div>
+
+</form>

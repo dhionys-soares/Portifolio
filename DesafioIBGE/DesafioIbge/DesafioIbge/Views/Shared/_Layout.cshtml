@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DesafioIbge</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DesafioIbge.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar d-flex flex-row shadow bg-dark bg-opacity-10">
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                IdentityUser user = await UserManager.FindByNameAsync(User.Identity.Name);
+
+                <a class="nav-link link-dark" asp-controller="Home" asp-action="Index">Início</a>
+                <a class="nav-link link-dark" asp-controller="Ibge" asp-action="SearchCity">Pesquisar por Cidade</a>
+                <a class="nav-link link-dark" asp-controller="Ibge" asp-action="SearchState">Pesquisar por Estado</a>
+                <a class="nav-link link-dark" asp-controller="Ibge" asp-action="SearchId">Pesquisar por Código</a>
+
+                <a class="nav-link ms-auto link-secondary bg-info bg-opacity-10 rounded rounded-pill" asp-controller="Account" asp-action="Logout">Olá @User.Identity.Name, Logout</a>
+            }
+            else
+            {
+                <a class="nav-link link-dark" asp-controller="Home" asp-action="Index">Início</a>
+                <div class="d-flex flex-row nav-link link-dark ms-auto">
+                    <a class="nav-link link-dark" asp-controller="Account" asp-action="Register">Registrar</a>
+                    <a class="nav-link link-dark" asp-controller="Account" asp-action="Login">Login</a>
+                </div>
+            }
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            &copy; 2024 - Desafio Ibge - <a href="https://balta.io/">Balta.io</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
