@@ -2,20 +2,34 @@
 
 <h1 class="text-center mb-5 pt-5">Registrar</h1>
 
-<form id="container" class="container mt-5 pt-4" asp-controller="Account" asp-action="Register" method="post"> 
+<form class="container mt-5 pt-4 text-center" asp-controller="Account" asp-action="LoginWithDefaultData" method="post">
+    <h4 class="text-center mb-5 pt-5 text-warning">Atenção!</h4>
+    <p class="text-center fw-bold">Caso não queira efetuar registro e login, registrando seu email,<br />pode clicar no botão abaixo e efetuar o login diretamente:</p>
     
-    <div id="nome" class="row justify-content-center text-center border-0">
+    <div class="d-flex flex-column text-center">
         
+        <input hidden asp-for="Name" value="user" />
+        <input hidden asp-for="Email" value="user@hotmail.com" />
+        <input hidden asp-for="Senha" value="eVkAVaBDiK&5" />
+    </div>
+
+    <button class="btn btn-primary m-2 p-2" type="submit">Logar diratamente</button>
+</form>
+
+<form id="container" class="container mt-5 pt-4" asp-controller="Account" asp-action="Register" method="post">
+
+    <div id="nome" class="row justify-content-center text-center border-0">
+
         <label class="col-auto" asp-for="Name">Nome</label>
         <input class="col-8  rounded rounded-pill" type="text" asp-for="Name" />
         <span asp-validation-for="Name" class="form-check row text-danger"></span>
     </div>
 
     <div id="email" class="row justify-content-center text-center border-0">
-        
+
         <label class="col-auto" asp-for="Email">Email</label>
         <input class="col-8 rounded rounded-pill" type="email" asp-for="Email" />
-        <span asp-validation-for="Email" class="form-check row text-danger"></span>        
+        <span asp-validation-for="Email" class="form-check row text-danger"></span>
     </div>
 
     <div id="senha" class="row justify-content-center text-center border-0">
@@ -24,7 +38,7 @@
         <input class="col-8 rounded rounded-pill" type="password" asp-for="Senha" />
         <span asp-validation-for="Senha" class="form-check row text-danger"></span>
     </div>
-  @*   <div class="text-danger pt-3">@Html.ValidationSummary()</div> *@
+    @*   <div class="text-danger pt-3">@Html.ValidationSummary()</div> *@
 
     <div id="botoes" class="d-flex justify-content-center">
 

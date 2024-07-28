@@ -17,95 +17,95 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DesafioIbge
 build_property.RootNamespace = DesafioIbge
-build_property.ProjectDir = C:\Balta\DesafioIBGE\DesafioIbge\DesafioIbge\
+build_property.ProjectDir = C:\dev\Portifolio\DesafioIBGE\DesafioIbge\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Balta\DesafioIBGE\DesafioIbge\DesafioIbge
+build_property.MSBuildProjectDirectory = C:\dev\Portifolio\DesafioIBGE\DesafioIbge
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Account/AddRole.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Account/AddRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Account/Login.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Account/Register.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Account/RemoveRole.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Account/RemoveRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZW1vdmVSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Home/Index.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/Create.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/Delete.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/GetAllOfState.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/GetAllOfState.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxHZXRBbGxPZlN0YXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/ReadById.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/ReadById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxSZWFkQnlJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/SearchByCity.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/SearchByCity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxTZWFyY2hCeUNpdHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/SearchById.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/SearchById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxTZWFyY2hCeUlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/SearchByState.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/SearchByState.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxTZWFyY2hCeVN0YXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/SearchCity.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/SearchCity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxTZWFyY2hDaXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/SearchId.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/SearchId.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxTZWFyY2hJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/SearchState.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/SearchState.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxTZWFyY2hTdGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Ibge/Update.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Ibge/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWJnZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Shared/Error.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/_ViewImports.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/_ViewStart.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Balta/DesafioIBGE/DesafioIbge/DesafioIbge/Views/Shared/_Layout.cshtml]
+[C:/dev/Portifolio/DesafioIBGE/DesafioIbge/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hj4u83echt

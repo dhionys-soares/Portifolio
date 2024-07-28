@@ -13,8 +13,8 @@ namespace DesafioIbge.Data.Mappings
 
             builder.Property(x => x.Id)
                 .ValueGeneratedNever()
-                .IsFixedLength(true)
-                .HasMaxLength(7);
+            .IsFixedLength(true)
+            .HasMaxLength(7);
 
             builder.Property(x => x.State)
                 .IsRequired(false)

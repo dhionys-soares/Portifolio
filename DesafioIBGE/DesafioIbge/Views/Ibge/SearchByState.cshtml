@@ -25,7 +25,7 @@
         {
             <tr class="text-muted shadow">
                 <td class="justify-content-start ms-5">
-                    @Html.DisplayFor(modelItem => item.City)
+                    <a asp-action="ReadById" asp-route-Id="@item.Id">@Html.DisplayFor(modelItem => item.City)</a>
                 </td>
 
                 @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))

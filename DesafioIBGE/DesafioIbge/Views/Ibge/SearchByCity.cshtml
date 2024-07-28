@@ -30,7 +30,7 @@
                     @Html.DisplayFor(modelItem => item.State)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.City)
+                    <a asp-action="ReadById" asp-route-Id="@item.Id">@Html.DisplayFor(modelItem => item.City)</a>
                 </td>
 
                 @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))

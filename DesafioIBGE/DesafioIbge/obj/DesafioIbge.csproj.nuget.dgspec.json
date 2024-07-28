@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Balta\\DesafioIBGE\\DesafioIbge\\DesafioIbge\\DesafioIbge.csproj": {}
+    "C:\\dev\\Portifolio\\DesafioIBGE\\DesafioIbge\\DesafioIbge.csproj": {}
   },
   "projects": {
-    "C:\\Balta\\DesafioIBGE\\DesafioIbge\\DesafioIbge\\DesafioIbge.csproj": {
+    "C:\\dev\\Portifolio\\DesafioIBGE\\DesafioIbge\\DesafioIbge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Balta\\DesafioIBGE\\DesafioIbge\\DesafioIbge\\DesafioIbge.csproj",
+        "projectUniqueName": "C:\\dev\\Portifolio\\DesafioIBGE\\DesafioIbge\\DesafioIbge.csproj",
         "projectName": "DesafioIbge",
-        "projectPath": "C:\\Balta\\DesafioIBGE\\DesafioIbge\\DesafioIbge\\DesafioIbge.csproj",
+        "projectPath": "C:\\dev\\Portifolio\\DesafioIBGE\\DesafioIbge\\DesafioIbge.csproj",
         "packagesPath": "C:\\Users\\dhiso\\.nuget\\packages\\",
-        "outputPath": "C:\\Balta\\DesafioIBGE\\DesafioIbge\\DesafioIbge\\obj\\",
+        "outputPath": "C:\\dev\\Portifolio\\DesafioIBGE\\DesafioIbge\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dhiso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,35 +52,43 @@
             },
             "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

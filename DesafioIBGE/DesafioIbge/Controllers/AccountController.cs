@@ -40,6 +40,23 @@ namespace DesafioIbge.Controllers
                 return StatusCode(500, "Erro ao realizar login.");
             }            
         }
+        [HttpPost]
+        public async Task<IActionResult> LoginWithDefaultData(UsuarioViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            try
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                var result = await _signInManager.PasswordSignInAsync(user, model.Senha, false, false);
+                return (!result.Succeeded) ? BadRequest("Não foi possível realizar o login.") : RedirectToAction("Index", "Home");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Erro ao realizar login.");
+            }
+        }
 
         public async Task<IActionResult> Logout()
         {
