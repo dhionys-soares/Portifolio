@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dev\\Portifolio\\DesafioIBGE\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51D6D974-C1AA-44C3-9C98-C572EC8BDCD5}|DesafioIbge\\DesafioIbge.csproj|c:\\dev\\portifolio\\desafioibge\\desafioibge\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51D6D974-C1AA-44C3-9C98-C572EC8BDCD5}|DesafioIbge\\DesafioIbge.csproj|solutionrelative:desafioibge\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\dev\\Portifolio\\DesafioIBGE\\DesafioIbge\\appsettings.json",
+              "RelativeDocumentMoniker": "DesafioIbge\\appsettings.json",
+              "ToolTip": "C:\\dev\\Portifolio\\DesafioIBGE\\DesafioIbge\\appsettings.json",
+              "RelativeToolTip": "DesafioIbge\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-05T18:52:45.79Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
